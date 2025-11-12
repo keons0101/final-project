@@ -1,0 +1,69 @@
+:root {
+    /* Colors */
+    --red-color: #DB2422;
+    --white-color: #EEEEEE;
+    --yellow-color: #FDE200;
+    --black-color: #0C0C0C;
+
+    /* Fonts */
+    --main-font: "Inter", sans-serif;
+    --secondary-font: "Oswald", sans-serif;
+    --terciary-font: "Martian Mono", monospace;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--secondary-font);
+}
+
+/* ********** HEADER STYLES ********** */
+.header {
+    position: relative;
+    height: 100vh;
+    background-image: url("./images/hero-background.jpg");
+    background-size: cover;
+    font-family: var(--secondary-font);
+}
+
+.header__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+    z-index: 1;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 32px;
+    z-index: 2;
+}
+
+.navbar__logo-image {
+    height: 40px;
+    width: auto;
+}
+
+.navbar__list {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+}
+
+.navbar__link {
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.navbar__link:hover {
+    text-decoration: underline;
+}

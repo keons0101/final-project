@@ -4,6 +4,7 @@
     --white-color: #EEEEEE;
     --yellow-color: #FDE200;
     --black-color: #0C0C0C;
+    --background-color: #060202;
 
     /* Fonts */
     --main-font: "Inter", sans-serif;
@@ -20,6 +21,11 @@ html {
     margin: 0;
     padding: 0;
     font-family: var(--secondary-font);
+    color: var(--white-color);
+}
+
+body {
+    background-color: var(--black-color);
 }
 
 /* ********** HEADER STYLES ********** */
@@ -28,6 +34,7 @@ html {
     height: 100vh;
     background-image: url("./images/hero-background.jpg");
     background-size: cover;
+    background-position: top center;
     font-family: var(--secondary-font);
 }
 
@@ -35,7 +42,7 @@ html {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2));
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
     z-index: 1;
 }
 
@@ -62,8 +69,70 @@ html {
 .navbar__link {
     text-decoration: none;
     color: var(--white-color);
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
 .navbar__link:hover {
     text-decoration: underline;
+}
+
+.header__arrow img {
+    height: 24px;
+    fill: #DB2422;
+}
+
+/* ********** MAIN STYLES ********** */
+
+.main {
+    padding: 24px 48px;
+    background-color: var(--black-color);
+}
+
+.about__title{
+    margin-bottom: 24px;
+}
+
+.about__subtitle {
+    margin-bottom: 16px;
+}
+
+.about__image {
+    float: left;
+    width: 300px;
+    margin: 0 16px 8px 0;
+}
+
+#img-2 {
+    margin: 0 0 8px 16px;
+    float: right;
+}
+
+.main h1 {
+    color: var(--red-color);
+}
+
+.main p {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* ********** FOOTER STYLES ********** */
+
+footer {
+    background-color: var(--red-color);
+}
+
+.footer img {
+    height: 150px;
+    float: right;
+}
+
+.footer__navbar {
+    float: left;
+}
+
+.footer p {
+    clear: both;
+    text-align: center;
 }

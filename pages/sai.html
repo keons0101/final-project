@@ -9,13 +9,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Martian+Mono&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Twenty One Pilots</title>
+    <style>
+        .more-album:active {
+            transform: scale(0.95);
+        }
+    </style>
 </head>
 <body>
     <header class="header">
         <div class="navbar">
-            <div class="navbar__logo">
+            <a href="../index.html" class="navbar__logo">
                 <img src="../images/top_icon.png" alt="Twenty One Pilots logo" class="navbar__logo-image">
-            </div>
+            </a>
             <nav class="navbar__menu">
                 <ul class="navbar__list">
                     <li class="navbar__item"><a href="../index.html" class="navbar__link">HOME</a></li>
@@ -52,16 +57,16 @@
                 <h1 class="about__title">Scaled and Icy</h1>
                 <h3 class="about__info">2021 | 37:42</h3>
                 <p class="about__text">
-                    Scaled and Icy is the sixth studio album by the American musical duo Twenty One Pilots, released on May 21, 2021, through Fueled by Ramen and Elektra. Its title is a play on "scaled back and isolated", a phrase frontman Tyler Joseph associated with music produced during the COVID-19 pandemic, though the title is also an anagram of "Clancy is dead", a reference to the protagonist of the duo's previous studio album, Trench (2018). The album received generally positive reviews from critics.</p>
+                    <span style="font-style: italic;">Scaled and Icy</span> is the sixth studio album by the American musical duo Twenty One Pilots, released on May 21, 2021, through Fueled by Ramen and Elektra. Its title is a play on "scaled back and isolated", a phrase frontman Tyler Joseph associated with music produced during the COVID-19 pandemic, though the title is also an anagram of "Clancy is dead", a reference to the protagonist of the duo's previous studio album, Trench (2018). The album received generally positive reviews from critics.</p>
                 <p class="about__text">
                     The album was written and largely produced by Joseph in his home studio over a year-long period during the COVID-19 pandemic, while drummer Josh Dun engineered the drum tracks remotely. The band had initially planned on embarking on a "victory lap" tour of arenas and festivals to draw the album cycle for Trench to a close, but the pandemic had instead left them with more free time than they were accustomed to. Joseph recalled being faced with two potential directions for the album when its writing process began in 2020, either to "lean into what [he] felt like everyone was feeling, this ominous world is ending feel", or to "kind of escape from that feeling", eventually choosing the latter approach.</p>
                 <p class="about__text">
                     Dun had revealed in November 2020 that they were still working "remotely" on the album, with both members being in different locations during the time. He describes the recording process, "we both have our own studios, which is really nice, so he comes up with a lot of stuff at his studio, sends it over to me, and then I come up with some stuff here at my studio and then send it back".</p>
-                <p class="about__text">
+                <p class="about__text about__text--sai">
                     The album's title is a play on "scaled back and isolated", a phrase frontman Tyler Joseph associated with the COVID-19 pandemic and its impact on the music produced at the time. On an interview with Sirius XM, he stated that he wanted to "lean into being aware that things are scaled back and that we're isolated".</p>
             </section>
         </section>
-        <section class="section__more-albums">
+        <section class="section__more-albums--inlineblock">
             <a href="./breach.html" class="more-album">
                 <img src="../images/breach.jpg" alt="Cover for the album Breach" class="more-album-image">
             </a>
@@ -104,3 +109,4 @@
         <p><a href="https://www.atlanticrecords.com/terms-of-use" target="_blank">TERMS OF USE</a> | <a href="https://privacy.wmg.com/atlantic/privacy-policy" target="_blank">PRIVACY POLICY</a>  | <a href="https://www.wminewmedia.com/cookies-policy/" target="_blank">COOKIES POLICY</a></p>
     </footer>
 </body>
+</html>

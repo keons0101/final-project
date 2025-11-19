@@ -157,7 +157,6 @@ body {
 
 .section__album-container img {
     width: 100%;
-    /* aspect-ratio: 1 / 1; */
     object-fit: cover;
     border-radius: 4px;
     height: auto;
@@ -183,7 +182,7 @@ body {
 /* Aside styles */
 .aside__tracklist {
     display: flex;
-    gap: 24px;
+    gap: 32px;
 }
 
 .aside__tracklist h2 {
@@ -192,9 +191,9 @@ body {
 }
 
 .aside__tracklist li {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 300;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
 .divisor {

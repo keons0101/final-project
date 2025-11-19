@@ -93,7 +93,7 @@ body {
     fill: #DB2422;
 }
 
-/* ********** MAIN STYLES: HOME PAGE ********** */
+/* ********** MAIN STYLES ********** */
 
 /* *** General styles*** */
 .main {
@@ -112,9 +112,8 @@ body {
     font-weight: 300;
 }
 
-/* *** Home page styles*** */
 .about__title{
-    margin-bottom: 24px;
+    margin-bottom: 4px;
 }
 
 .about__subtitle {
@@ -164,6 +163,61 @@ body {
     height: auto;
 }
 
+.section__more-albums {
+    display: flex;
+    margin-top: 48px;
+    justify-content: space-evenly;
+}
+
+.more-album-image {
+    height: 90px;
+}
+
+/* *** Albums page styles*** */
+
+.section__album-info-container {
+    display: flex;
+    gap: 16px;
+}
+
+/* Aside styles */
+.aside__tracklist {
+    display: flex;
+    gap: 24px;
+}
+
+.aside__tracklist h2 {
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.aside__tracklist li {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 4px;
+}
+
+.divisor {
+    height: 100%;
+    width: 1px;
+    background-color: var(--white-color);
+}
+/* -------------------- */
+
+/* Indivual album page styles */
+.about__image--album {
+    border-radius: 4px;
+}
+
+.about__subtitle--album {
+    font-family: var(--main-font);
+    font-size: 12px;
+}
+
+.about__info {
+    font-weight: 500;
+    margin-bottom: 16px;
+}
 
 /* ********** FOOTER STYLES ********** */
 

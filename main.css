@@ -32,14 +32,20 @@ body {
 
 /* ********** HEADER STYLES ********** */
 .header {
+    
+    font-family: var(--secondary-font);
+}
+
+/* This is only for home page */
+.header__home {
     position: relative;
     height: 100vh;
     background-image: url("./images/hero-background.jpg");
     background-size: cover;
     background-position: top center;
-    font-family: var(--secondary-font);
 }
 
+/* This is only for home page */
 .header__overlay {
     position: absolute;
     width: 100%;
@@ -76,7 +82,10 @@ body {
 }
 
 .navbar__link:hover {
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    padding: 4px 8px;
+    color: var(--red-color);
+    background-color: var(--yellow-color);
 }
 
 .header__arrow img {
@@ -84,13 +93,26 @@ body {
     fill: #DB2422;
 }
 
-/* ********** MAIN STYLES ********** */
+/* ********** MAIN STYLES: HOME PAGE ********** */
 
+/* *** General styles*** */
 .main {
     padding: 24px 48px;
     background-color: var(--black-color);
+    margin-bottom: 16px;
 }
 
+.main h1 {
+    color: var(--red-color);
+}
+
+.main p {
+    text-align: justify;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+/* *** Home page styles*** */
 .about__title{
     margin-bottom: 24px;
 }
@@ -110,14 +132,38 @@ body {
     float: right;
 }
 
-.main h1 {
-    color: var(--red-color);
-}
-
-.main p {
-    text-align: justify;
+/* *** Albums page styles*** */
+.section__discography-container h1{
+    text-align: center;
     margin-bottom: 20px;
 }
+
+.section__discography {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 36px;
+}
+
+.section__album-container {
+    flex: 1 1 21%;
+    max-width: 16%;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+}
+
+.section__album-container img {
+    width: 100%;
+    /* aspect-ratio: 1 / 1; */
+    object-fit: cover;
+    border-radius: 4px;
+    height: auto;
+}
+
 
 /* ********** FOOTER STYLES ********** */
 

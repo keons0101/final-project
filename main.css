@@ -81,7 +81,6 @@ body {
 }
 
 .navbar__link:hover {
-    /* text-decoration: underline; */
     padding: 4px 8px;
     color: var(--red-color);
     background-color: var(--yellow-color);
@@ -170,6 +169,12 @@ body {
     display: flex;
     margin-top: 48px;
     justify-content: space-evenly;
+}
+
+.section__more-albums--grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 24px;
 }
 
 .section__more-albums--inlineblock > * {
@@ -265,7 +270,6 @@ footer {
     color: var(--black-color);
 }
 
-/* Here is where I use display: inline */
 .footer__links {
     clear: both;
     text-align: center;
@@ -275,6 +279,7 @@ footer {
     margin-top: -10px;
 }
 
+/* Here is where I use display: inline */
 .footer__links-list li {
     font-size: 7px;
     letter-spacing: 3px;
